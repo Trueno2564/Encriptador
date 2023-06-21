@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- encriptador de texto -->
+    <div class="logo">
+        <img src="media/BEAR logo - negro.png" alt="BEAR-Logo" class="logoImg">
+    </div>
+    <div class="input">
+        <textarea name="text_input" class="text_input" placeholder="Ingrese texto aqui"></textarea>
+        <label for="text_input" class="advertencia"><img src="media/outline_error_black_24dp.png" alt="Advertencia" class="icono"> Solo letras minusculas y sin acentos</label>
+        <div class="buttons">
+            <button class="eButton">Encriptar</button>
+            <button class="dButton">Desencriptar</button>
+        </div>
+    </div>
+    <div class="output">
+        <div class="output_cont">
+            <div class="result">
+                <div class="vacio">
+                    <img src="media/imagen.png" alt="" class="imagen">
+                    <p class="msj_1"><strong>Ningún mensaje fue encontrado</strong></p>
+                    <p class="msj_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="btn_copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="eventos.js"></script>
+</body>
+</html>
